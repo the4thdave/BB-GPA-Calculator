@@ -168,8 +168,10 @@ int main() {
 		is_answering = obj1.exit_option();
 	}
 
-	cout << grades << "\n" << credits << "\n" << cumul_points << " " <<
-		cum_credits << "\n" << cum_gpa << endl;
+	for (int i = 0; i < dub_gpa_vec.size(); ++i) {
+		cout << "Semester " << i + 1 << " GPA: " << dub_gpa_vec[i] << "\n";
+	}
+	cout << "Cumulative GPA: " << cum_gpa << endl;
 
 	return 0;
 }
