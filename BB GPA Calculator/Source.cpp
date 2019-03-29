@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include <string>
 #include <vector>
 
@@ -169,7 +170,8 @@ int main() {
 	}
 
 	for (int i = 0; i < dub_gpa_vec.size(); ++i) {
-		cout << "Semester " << i + 1 << " GPA: " << dub_gpa_vec[i] << "\n";
+		cout << "Semester " << i + 1 << " GPA: " << fixed << setprecision(2) 
+			 << dub_gpa_vec[i] << "\n";
 	}
 	cout << "Cumulative GPA: " << cum_gpa << endl;
 
